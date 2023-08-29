@@ -1,0 +1,11 @@
+.inputText {
+  font-size: 15px;
+  width: calc(100% - 25px);
+  border: none;
+  height: 59px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  outline: 0px;
+  color: rgb(16, 16, 16);
+  box-shadow: rgba(0, 0, 0, 0.29) 1px 5px 4px 1px;
+}

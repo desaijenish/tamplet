@@ -1,0 +1,57 @@
+.Card {
+  width: calc(33.33% - 70px);
+  padding: 40px 25px 35px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+  border-top: 15px solid transparent;
+  transition:  0.1s;
+}
+.heding {
+  font-size: 23px;
+  margin: 15px 0px;
+}
+
+.Card:hover {
+  border-top: 15px solid rgb(81, 42, 151);
+  transition: 1s;
+}
+.cardcontainer{
+  gap:25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+} 
+.cardcontainer .Card:nth-child(2){
+  border-top: 15px solid rgb(81, 42, 151);
+}
+
+@media (max-width:900px) {
+  .Card{
+    width: calc(50% - 70px);
+   
+  }
+}
+@media (max-width:551px) {
+  .Card{
+    width: calc(100% - 70px);
+    padding: 20px 15px 10px;
+  }
+  .cardcontainer{
+    gap:0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  } 
+  .Card center image{
+    width: 70px;
+    background-color: aquamarine;
+  }
+  .heding {
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+  .Card center p{
+    font-size: 13px;
+  }
+  
+}
