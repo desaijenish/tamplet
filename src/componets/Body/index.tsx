@@ -19,6 +19,83 @@ const Rootcontainer = styled.div(() => ({
   },
 }));
 
+const Width50 = styled.div(() => ({
+  width: "50%",
+  "@media (max-width:1000px)": {
+    width: "100%",
+    marginTop: "20px",
+  },
+}));
+const Heading = styled.h1(() => ({
+  fontSize: "2.9rem",
+  "@media (max-width:1000px)": {
+    fontSize: "1.9rem",
+  },
+}));
+
+const Text = styled.p(() => ({
+  margin: "14px 0px ",
+  lineHeight: "25px",
+  wordSpacing: "2px",
+  fontSize: "17px",
+  "@media (max-width:500px)": {
+    margin: "14px 0px",
+    lineHeight: "20px",
+    wordSpacing: "1px",
+    fontSize: "14px",
+  },
+}));
+const End = styled.div(()=>({
+  display:'flex',
+  justifyContent:"end",
+  "@media (max-width:1000px)": {
+    justifyContent:"center",
+  },
+}) )
+const PrevButton = styled.button(()=>({
+  width:'45px',
+  height:'45px',
+  border:'none',
+  borderRadius:'100%',
+  backgroundColor:'white',
+  margin:'-32px 150px 0px 0px',
+  zIndex:1,
+  "@media (max-width:1000px)": {
+    margin:'-25px 0px 0px 150px',
+  },
+  "@media (max-width:500px)": {
+    margin:'-29px 0px 0px 70px',
+    width:'35px',
+    height:'35px',
+    fontSize:'10px',
+  },
+}))
+const NextButton = styled.button(()=>({
+  width:'45px',
+  height:'45px',
+  border:'none',
+  borderRadius:'100%',
+  backgroundColor:'#4b208c',
+  margin:'-65px 105px 0px 0px',
+  zIndex:1,
+  "@media (max-width:1000px)": {
+    margin:'-65px 0px 0px 230px',
+  },
+  "@media (max-width:500px)": {
+    margin:'-50px 0px 0px 130px',
+    width:'35px',
+    height:'35px',
+    fontSize:'10px',
+  },
+}))
+const Sliders = styled(Slider)( ()=>({
+  position:'relative',
+  width:'80%',
+  overflow:'hidden',
+  borderRadius:'50%',
+  border:'8px solid #4b208c'
+}) )
+
 const Body = () => {
   const sliderRef: any = useRef(null);
 
@@ -46,41 +123,41 @@ const Body = () => {
 
   return (
     <Rootcontainer>
-      <div className="body">
+      <Width50>
         <div style={{ margin: "40px 0px" }}>
-          <h1 className="body-heading">
+          <Heading>
             ELECTRICAL
             <br />
             SERVICE
             <br />
             PROVIDERS
-          </h1>
-          <p className="body-text">
+          </Heading>
+          <Text>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem
-          </p>
+          </Text>
           <Button name="Contact Us" />
         </div>
-      </div>
-      <div className="body">
-        <div className="end">
-          <Slider {...settings} className="slider" ref={sliderRef}>
-            <img src={image} alt="" />
-            <img src={image} alt="" />
-          </Slider>
-        </div>
-        <div className="end">
-          <button className="prev-button" onClick={handlePrevClick}>
+      </Width50>
+      <Width50>
+        <End>
+          <Sliders {...settings} ref={sliderRef}>
+            <img src={image} alt="" width={'100%'}/>
+            <img src={image} alt=""  width={'100%'}/>
+          </Sliders>
+        </End>
+        <End >
+          <PrevButton  onClick={handlePrevClick}>
             <GoChevronLeft style={{ fontSize: "25px" }} />
-          </button>
-        </div>
-        <div className="end">
-          <button className="next-button" onClick={handleNextClick}>
+          </PrevButton>
+        </End>
+        <End>
+          <NextButton onClick={handleNextClick}>
             <GoChevronRight style={{ fontSize: "25px" }} />
-          </button>
-        </div>
-      </div>
+          </NextButton>
+        </End>
+      </Width50>
     </Rootcontainer>
   );
 };
