@@ -1,5 +1,4 @@
 import image from "../../asset/slider-img.jpg";
-import "./index.css";
 import Button from "../Button";
 import React, { useRef } from "react";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
