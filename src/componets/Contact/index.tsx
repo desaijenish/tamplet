@@ -13,6 +13,17 @@ const Heading = styled.div(() => ({
   display: "flex",
   margin: "70px 0px",
 }));
+const Input = styled.input( ()=>({
+  fontSize:'15px',
+  width:"calc(100% - 25px)",
+  border:'none',
+  height:'59px',
+  marginBottom:'25px',
+  paddingLeft:'25px',
+  outline:"0px",
+  color:' rgb(16, 16, 16)',
+  boxShadow:' rgba(0, 0, 0, 0.29) 1px 5px 4px 1px',
+}) )
 
 const Contact = () => {
   return (
@@ -24,20 +35,20 @@ const Contact = () => {
         </Heading>
         <Width50>
           <form>
-            <input className="inputText" type="text" placeholder="Name" />
-            <input className="inputText" type="email" placeholder="Email" />
-            <input
+            <Input className="inputText" type="text" placeholder="Name" />
+            <Input className="inputText" type="email" placeholder="Email" />
+            <Input
               className="inputText"
               type="number"
               placeholder="PhoneNsumber"
             />
-            <input
+            <Input
               className="inputText"
               type="text"
               placeholder="Massege"
               style={{ height: "130px" }}
             />
-            <input
+            <Input
               type="submit"
               value="send"
               className="button"

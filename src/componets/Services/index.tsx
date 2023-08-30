@@ -15,6 +15,19 @@ const Heading = styled.div(() => ({
   justifyContent: "center",
   margin: "50px 0px",
 }));
+const Container = styled.div(()=>({
+  gap:'25px',
+  flexWrap:'wrap',
+  justifyContent:'center',
+  rowGap:'50px',
+  display:'flex',
+  '@media (max-width:551px)':{
+    gap:'0px',
+    flexWrap:'wrap',
+    justifyContent:'center',
+    rowGap:'30px'
+  }
+}))
 
 const Services = () => {
   return (
@@ -24,13 +37,13 @@ const Services = () => {
         <img src={image} alt="" />
       </Heading>
       <div>
-        <div className="flex cardcontainer">
+        <Container className="flex cardcontainer">
           <Card title="Equipment installation" image={s1} />
           <Card title="Windmill Energy" image={s2} />
           <Card title="Equipment Maintenance" image={s3} />
           <Card title="Offshore Engineering  " image={s4} />
           <Card title="Electrical Wiring" image={s5} />
-        </div>
+        </Container>
         <center style={{ margin: "40px 0px" }}>
           <Button name="Read More" />
         </center>

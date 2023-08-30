@@ -67,6 +67,14 @@ const Button = styled.button(() => ({
     margin:'10px 6px'
   },
 }));
+const Width20 = styled.div( () =>({
+  width:'20%',
+  display:'flex',
+  "@media (max-width: 550px)": {
+    width:'100%',
+    justifyContent:'center',
+  }
+}))
 const Footer = () => {
   return (
     <RootContainer>
@@ -83,16 +91,15 @@ const Footer = () => {
           </span>
           <Center >
             <Button
-              className="button-footer button"
-              style={{ borderRadius: "0px" }}
+              // style={{ borderRadius: "0px" }}
             >
               SUBSCRIBE
             </Button>
           </Center>
         </Email>
-        <div className="w-20 flex" style={{ margin: "43px 0px" }}>
+        <Width20 className="w-20 flex" style={{ margin: "43px 0px" }}>
           <SocialMedia />
-        </div>
+        </Width20>
       </Container>
     </RootContainer>
   );
