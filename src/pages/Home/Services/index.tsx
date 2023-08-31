@@ -8,7 +8,6 @@ import s5 from "../../../asset/s5.png";
 import Card from "./Card";
 import styled from "@emotion/styled";
 import Button from "../../../componets/Button";
-// import moduleName from '../../../asset/about-img1.jpg'
 
 const Heading = styled.div(() => ({
   display: "flex",

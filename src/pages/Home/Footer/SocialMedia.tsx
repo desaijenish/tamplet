@@ -43,8 +43,8 @@ function SocialMedia() {
             <AiOutlineTwitter />
           </Icon>
         </center>
-      </CircleIcon>
-      <CircleIcon>
+      </CircleIcon >
+      <CircleIcon >
         <center>
           <Icon>
             <BiLogoLinkedin />
