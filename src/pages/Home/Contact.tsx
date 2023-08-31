@@ -21,7 +21,6 @@ const InputFrome = styled.input( ()=>({
   marginBottom:'25px',
   paddingLeft:'25px',
   outline:"0px",
-  color:' rgb(16, 16, 16)',
   boxShadow:' rgba(0, 0, 0, 0.29) 1px 5px 4px 1px',
 }) )
 const SendButton = styled.input( ()=>({

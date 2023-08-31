@@ -12,7 +12,8 @@ const Container = styled.div(() => ({
   display: "flex",
   gap: "50px",
   justifyContent: "space-between",
-  width: "100%",
+  margin: "43px 0px",
+
   "@media (max-width:900px)": {
     flexDirection: "column",
     justifyContent: "center",
@@ -64,7 +65,7 @@ const Button = styled.button(() => ({
     margin: "10px 6px",
   },
 }));
-const SocialContainer = styled.div(() => ({
+const Width20 = styled.div(() => ({
   width: "20%",
   display: "flex",
   "@media (max-width: 550px)": {
@@ -75,19 +76,17 @@ const SocialContainer = styled.div(() => ({
 const Footer = () => {
   return (
     <RootContainer>
+      <FooterContact />
       <Container>
-        <FooterContact />
-      </Container>
-      <Container style={{ margin: "43px 0px" }}>
         <Email>
           <Input type="text" placeholder="Enter your email" />
           <Center>
             <Button>SUBSCRIBE</Button>
           </Center>
         </Email>
-        <SocialContainer>s
+        <Width20>
           <SocialMedia />
-        </SocialContainer>
+        </Width20>
       </Container>
     </RootContainer>
   );

@@ -11,7 +11,6 @@ const Heading = styled.div(() => ({
   margin: "70px 0px",
 }));
 const BlogContainer = styled.div(() => ({
-  width: "50%",
   "@media (max-width: 900px)": {
     width: "100%",
   },
@@ -34,7 +33,7 @@ const Blog = () => {
         <img src={BlogLogo} alt="" />
       </Heading>
       <div>
-        <Container className="blog-container">
+        <Container >
           <BlogContainer>
             <BlogCards image={Bimage1} />
           </BlogContainer>

@@ -35,6 +35,10 @@ const Icon = styled.div(() => ({
     fontSize: "35px",
   },
 }));
+const FooterText = styled.p(() => ({
+  marginTop: "8px",
+  color: "white",
+}));
 function FooterContact() {
   return (
     <RootContainer>
@@ -43,29 +47,23 @@ function FooterContact() {
           <Icon>
             <MdOutlineLocationOn />
           </Icon>
-          <p style={{ marginTop: "8px",color:'white' }} >
-            Passages of Lorem Ipsum available
-          </p>
+          <FooterText>Passages of Lorem Ipsum available</FooterText>
         </Contact>
       </FooterContainer>
       <FooterContainer>
         <Contact>
           <Icon>
-            <BsFillTelephoneFill  />
+            <BsFillTelephoneFill />
           </Icon>
-          <p style={{ marginTop: "8px",color:'white' }} >
-            Call : +012334567890
-          </p>
+          <FooterText>Call : +012334567890</FooterText>
         </Contact>
       </FooterContainer>
       <FooterContainer>
         <Contact>
           <Icon>
-          <MdEmail />
+            <MdEmail />
           </Icon>
-          <p style={{ marginTop: "8px",color:'white' }} >
-            mail@domain.com
-          </p>
+          <FooterText>mail@domain.com</FooterText>
         </Contact>
       </FooterContainer>
     </RootContainer>
