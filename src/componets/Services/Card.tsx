@@ -56,7 +56,7 @@ const Card:FC<CardProps> = ({image,title}) => {
     <Cards >
         <center >
             <Image src={image} alt="" width={90}/>
-            <Heading className='heding' >{title}</Heading>
+            <Heading >{title}</Heading>
             <Text >There are many variations of passages of Lorem Ipsum available,</Text>
         </center>
     </Cards>

@@ -37,7 +37,7 @@ const Services = () => {
         <img src={image} alt="" />
       </Heading>
       <div>
-        <Container className="flex cardcontainer">
+        <Container>
           <Card title="Equipment installation" image={s1} />
           <Card title="Windmill Energy" image={s2} />
           <Card title="Equipment Maintenance" image={s3} />

@@ -1,6 +1,5 @@
 import React from "react";
 import centactLogo from "../../asset/plug.png";
-import "./index.css";
 import styled from "@emotion/styled";
 
 const Width50 = styled.div(() => ({
@@ -51,8 +50,8 @@ const Contact = () => {
             <Input
               type="submit"
               value="send"
-              className="button"
-              style={{ borderRadius: "0px" }}
+              className="button "
+              style={{ borderRadius: "0px",width:'30%',color:'white' }}
             />
           </form>
         </Width50>

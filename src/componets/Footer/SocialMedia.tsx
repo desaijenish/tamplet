@@ -21,22 +21,22 @@ function SocialMedia() {
 
   return (
     <div className="flex">
-      <Box className="iconBox">
+      <Box>
         <center>
           <FaFacebookF className="icon-social" />
         </center>
       </Box>
-      <Box className="iconBox">
+      <Box>
         <center>
           <AiOutlineTwitter className="icon-social" />
         </center>
       </Box>
-      <Box className="iconBox">
+      <Box>
         <center>
           <BiLogoLinkedin className="icon-social" />
         </center>
       </Box>
-      <Box className="iconBox">
+      <Box>
         <center>
           <AiFillInstagram className="icon-social" />
         </center>

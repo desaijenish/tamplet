@@ -17,6 +17,11 @@
   display: flex;
 }
 
+.icon {
+  font-size: 40px;
+  margin: 0px 0px;
+}
+
 .button {
   color: white;
   text-decoration: none;
@@ -28,12 +33,22 @@
   font-size: 17px;
   cursor: pointer;
 }
-
+.icon-social{
+  margin-top: 8px;
+  font-size: 17px;
+  color: #190734;
+}
 @media (max-width: 550px) {
   .button {
     padding: 12px 40px;
     border-radius: 35px;
     margin-top: 5px;
     font-size: 12px;
+  }
+}
+@media (max-width: 900px) {
+  .icon {
+    font-size: 35px;
+    margin: 0px 0px;
   }
 }
