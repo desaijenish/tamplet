@@ -1,7 +1,6 @@
 import React from "react";
 import SocialMedia from "./SocialMedia";
 import styled from "@emotion/styled";
-import "./index.css";
 import FooterContact from "./FooterContact";
 
 const RootContainer = styled.div(() => ({
@@ -65,7 +64,7 @@ const Button = styled.button(() => ({
     margin: "10px 6px",
   },
 }));
-const Width20 = styled.div(() => ({
+const SocialContainer = styled.div(() => ({
   width: "20%",
   display: "flex",
   "@media (max-width: 550px)": {
@@ -86,9 +85,9 @@ const Footer = () => {
             <Button>SUBSCRIBE</Button>
           </Center>
         </Email>
-        <Width20>s
+        <SocialContainer>s
           <SocialMedia />
-        </Width20>
+        </SocialContainer>
       </Container>
     </RootContainer>
   );

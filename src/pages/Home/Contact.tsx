@@ -1,8 +1,9 @@
 import React from "react";
 import centactLogo from "../../asset/plug.png";
 import styled from "@emotion/styled";
+import theme from "../../theme/theme";
 
-const Width50 = styled.div(() => ({
+const ContactContainer = styled.div(() => ({
   width: "50%",
   "@media (max-width: 900px)": {
     width: "100%",
@@ -12,7 +13,7 @@ const Heading = styled.div(() => ({
   display: "flex",
   margin: "70px 0px",
 }));
-const Input = styled.input( ()=>({
+const InputFrome = styled.input( ()=>({
   fontSize:'15px',
   width:"calc(100% - 25px)",
   border:'none',
@@ -23,6 +24,14 @@ const Input = styled.input( ()=>({
   color:' rgb(16, 16, 16)',
   boxShadow:' rgba(0, 0, 0, 0.29) 1px 5px 4px 1px',
 }) )
+const SendButton = styled.input( ()=>({
+  width:'30%',
+  color:'white',
+  borderRadius:'0px',
+  height:'50px',
+  backgroundColor:theme.palette.primary.main,
+  border:'0px'
+}))
 
 const Contact = () => {
   return (
@@ -32,29 +41,27 @@ const Contact = () => {
           <h1>Contact Us</h1>
           <img src={centactLogo} alt="" />
         </Heading>
-        <Width50>
+        <ContactContainer>
           <form>
-            <Input className="inputText" type="text" placeholder="Name" />
-            <Input className="inputText" type="email" placeholder="Email" />
-            <Input
+            <InputFrome className="inputText" type="text" placeholder="Name" />
+            <InputFrome className="inputText" type="email" placeholder="Email" />
+            <InputFrome
               className="inputText"
               type="number"
               placeholder="PhoneNsumber"
             />
-            <Input
+            <InputFrome
               className="inputText"
               type="text"
               placeholder="Massege"
               style={{ height: "130px" }}
             />
-            <Input
+            <SendButton
               type="submit"
               value="send"
-              className="button "
-              style={{ borderRadius: "0px",width:'30%',color:'white' }}
             />
           </form>
-        </Width50>
+        </ContactContainer>
       </div>
     </div>
   );

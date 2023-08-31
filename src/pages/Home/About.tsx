@@ -5,6 +5,7 @@ import image1 from "../../asset/about-img1.jpg";
 import image2 from "../../asset/about-img2.jpg";
 import styled from "@emotion/styled";
 
+
 const RootContainer = styled.div(() => ({
   display: "flex",
   justifyContent: "space-between",
@@ -17,7 +18,7 @@ const RootContainer = styled.div(() => ({
   },
 }));
 
-const Width50 = styled.div(() => ({
+const AboutContainer = styled.div(() => ({
   width: "50%",
   "@media (max-width: 900px)": {
     width: "100%",
@@ -27,11 +28,11 @@ const Heading = styled.h1(() => ({
   fontSize: "2rem",
   fontWeight: 800,
 }));
-const Flex = styled.div(() => ({
-  display: "felx",
+const HeadingContainer = styled.div(() => ({
+  display: "flex",
   margin: "20px 0px",
 }));
-const Text = styled.p(() => ({
+const AboutText = styled.p(() => ({
   margin: "14px 0px",
   lineHeight: "25px",
   wordSpacing: "2px",
@@ -94,24 +95,24 @@ const Image2 = styled.img( () =>({
 const About = () => {
   return (
     <RootContainer>
-      <Width50>
-        <Flex className="flex" style={{ margin: "20px 0px" }}>
+      <AboutContainer>
+        <HeadingContainer  style={{ margin: "20px 0px" }}>
           <Heading>About Us</Heading>
           <img src={AboutLogo} alt="" />
-        </Flex>
-        <Text>
+        </HeadingContainer>
+        <AboutText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod
           tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim
           veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea
           commodo consequat. Duis aute irure dolorin reprehenderit in voluptates
           velit
-        </Text>
+        </AboutText>
         <Button>Read More</Button>
-      </Width50>
-      <Width50>
+      </AboutContainer>
+      <AboutContainer>
         <Image1 src={image1}/>
         <Image2 className="image_about img2" src={image2} alt="" />
-      </Width50>
+      </AboutContainer>
     </RootContainer>
   );
 };

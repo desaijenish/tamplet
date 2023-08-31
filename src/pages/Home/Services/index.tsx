@@ -1,14 +1,14 @@
 import React from "react";
-import image from "../../asset/plug.png";
-import s1 from "../../asset/s1.png";
-import s2 from "../../asset/s2.png";
-import s3 from "../../asset/s3.png";
-import s4 from "../../asset/s4.png";
-import s5 from "../../asset/s5.png";
+import image from "../../../asset/plug.png";
+import s1 from "../../../asset/s1.png";
+import s2 from "../../../asset/s2.png";
+import s3 from "../../../asset/s3.png";
+import s4 from "../../../asset/s4.png";
+import s5 from "../../../asset/s5.png";
 import Card from "./Card";
-import "./index.css";
-import Button from "../Button";
 import styled from "@emotion/styled";
+import Button from "../../../componets/Button";
+// import moduleName from '../../../asset/about-img1.jpg'
 
 const Heading = styled.div(() => ({
   display: "flex",

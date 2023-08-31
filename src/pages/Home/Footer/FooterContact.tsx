@@ -8,7 +8,7 @@ const Contact = styled.div(() => ({
   display: "flex",
   justifyContent: "center",
 }));
-const Container = styled.div(() => ({
+const RootContainer = styled.div(() => ({
   display: "flex",
   gap: "50px",
   justifyContent: "space-between",
@@ -20,40 +20,55 @@ const Container = styled.div(() => ({
     rowGap: "10px",
   },
 }));
-const Width30 = styled.div(() => ({
+const FooterContainer = styled.div(() => ({
   width: "33.33%",
   "@media (max-width:900px)": {
     width: "100%",
   },
 }));
+
+const Icon = styled.div(() => ({
+  color: "white",
+  fontSize: "40px",
+  margin: " 0px 0px",
+  "@media (max-width:900px)": {
+    fontSize: "35px",
+  },
+}));
 function FooterContact() {
   return (
-    <Container>
-      <Width30>
+    <RootContainer>
+      <FooterContainer>
         <Contact>
-          <MdOutlineLocationOn className="icon color-white" />
-          <p style={{ marginTop: "8px" }} className="color-white ">
+          <Icon>
+            <MdOutlineLocationOn />
+          </Icon>
+          <p style={{ marginTop: "8px",color:'white' }} >
             Passages of Lorem Ipsum available
           </p>
         </Contact>
-      </Width30>
-      <Width30>
+      </FooterContainer>
+      <FooterContainer>
         <Contact>
-          <BsFillTelephoneFill className="icon color-white" />
-          <p style={{ marginTop: "8px" }} className="color-white">
+          <Icon>
+            <BsFillTelephoneFill  />
+          </Icon>
+          <p style={{ marginTop: "8px",color:'white' }} >
             Call : +012334567890
           </p>
         </Contact>
-      </Width30>
-      <Width30>
+      </FooterContainer>
+      <FooterContainer>
         <Contact>
-          <MdEmail className="icon color-white" />
-          <p style={{ marginTop: "8px" }} className="color-white">
+          <Icon>
+          <MdEmail />
+          </Icon>
+          <p style={{ marginTop: "8px",color:'white' }} >
             mail@domain.com
           </p>
         </Contact>
-      </Width30>
-    </Container>
+      </FooterContainer>
+    </RootContainer>
   );
 }
 

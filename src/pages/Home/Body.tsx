@@ -1,11 +1,11 @@
 import image from "../../asset/slider-img.jpg";
-import Button from "../Button";
 import React, { useRef } from "react";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "@emotion/styled";
+import Button from "../../componets/Button";
 
 const Rootcontainer = styled.div(() => ({
   display: "flex",
@@ -18,7 +18,7 @@ const Rootcontainer = styled.div(() => ({
   },
 }));
 
-const Width50 = styled.div(() => ({
+const BodyContainer = styled.div(() => ({
   width: "50%",
   "@media (max-width:1000px)": {
     width: "100%",
@@ -32,7 +32,7 @@ const Heading = styled.h1(() => ({
   },
 }));
 
-const Text = styled.p(() => ({
+const BodyText = styled.p(() => ({
   margin: "14px 0px ",
   lineHeight: "25px",
   wordSpacing: "2px",
@@ -122,7 +122,7 @@ const Body = () => {
 
   return (
     <Rootcontainer>
-      <Width50>
+      <BodyContainer>
         <div style={{ margin: "40px 0px" }}>
           <Heading>
             ELECTRICAL
@@ -131,15 +131,15 @@ const Body = () => {
             <br />
             PROVIDERS
           </Heading>
-          <Text>
+          <BodyText>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem
-          </Text>
+          </BodyText>
           <Button name="Contact Us" />
         </div>
-      </Width50>
-      <Width50>
+      </BodyContainer>
+      <BodyContainer>
         <End>
           <Sliders {...settings} ref={sliderRef}>
             <img src={image} alt="" width={'100%'}/>
@@ -156,7 +156,7 @@ const Body = () => {
             <GoChevronRight style={{ fontSize: "25px" }} />
           </NextButton>
         </End>
-      </Width50>
+      </BodyContainer>
     </Rootcontainer>
   );
 };
