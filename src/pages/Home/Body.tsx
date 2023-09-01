@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "@emotion/styled";
 import Button from "../../componets/Button";
+import theme from "../../theme/theme";
 
 const Rootcontainer = styled.div(() => ({
   display: "flex",
@@ -74,7 +75,7 @@ const NextButton = styled.button(()=>({
   height:'45px',
   border:'none',
   borderRadius:'100%',
-  backgroundColor:'#4b208c',
+  backgroundColor:theme.palette.primary.main,
   margin:'-65px 105px 0px 0px',
   zIndex:1,
   "@media (max-width:1000px)": {
@@ -96,7 +97,7 @@ const Sliders = styled(Slider)( ()=>({
 }) )
 
 const Body = () => {
-  const sliderRef: any = useRef(null);
+  const sliderRef:any = useRef(null);
 
   const settings = {
     dots: false,

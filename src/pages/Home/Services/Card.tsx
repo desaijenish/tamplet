@@ -3,7 +3,7 @@ import React, { FC } from 'react'
 
 
 interface CardProps{
-  image:string
+  image:string 
   title:string
 }
 
@@ -23,7 +23,6 @@ const Cards = styled.div(()=>({
   },
   '&:hover':{
     borderTop:'15px solid rgb(81, 42, 151)',
-    transition:'1s'
   },
   '&:nth-child(2)':{
     borderTop:'15px solid rgb(81, 42, 151)',

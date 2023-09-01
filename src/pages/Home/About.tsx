@@ -4,6 +4,7 @@ import AboutLogo from "../../asset/plug.png";
 import image1 from "../../asset/about-img1.jpg";
 import image2 from "../../asset/about-img2.jpg";
 import styled from "@emotion/styled";
+import theme from "../../theme/theme";
 
 const RootContainer = styled.div(() => ({
   display: "flex",
@@ -50,7 +51,7 @@ const AboutText = styled.p(() => ({
 const Button = styled.button(() => ({
   color: "white",
   textDecoration: "none",
-  backgroundColor: "#4b208c",
+  backgroundColor: theme.palette.primary.main,
   border: "0px",
   padding: "15px 50px",
   borderRadius: "10px",
